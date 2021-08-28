@@ -59,6 +59,42 @@
         /*none, line-through, underline, overline 등*/
         text-decoration: underline;
     }
+
+    /*border 속성: 요소의 테두리를 꾸미는 속성*/
+    .beverage{
+        /*개별 속성을 적용할 때는 접미사 붙임*/
+        /*border-width: 3px;
+        border-style:dashed;
+        border-color:grey;*/
+
+        /*일괄 적용: width style color 순*/
+        
+        border: 3px dashed gray;
+    }
+
+    .beverage img{
+        /*값이 1개: 전 방향 적용*/
+        padding: 10px;
+    }
+    .beverage h2{
+        /*값이 2개: 위-아래 왼쪽-오른쪽*/
+        margin: 0 10px;
+    }
+    .beverage p{
+        /*값이 4개: 위 오른쪽 아래 외쪽 순*/
+        margin: 20px 10px 10px 10px;
+    }
+
+    .seller img{
+        border-radius: 20px;
+        /*네 귀퉁이 모두에 동글기 적용*/
+        border-radius:10px 20px 30px 40px;
+        /*죄측위 우측위 오른쪽 아래 왼쪽 아래 순: 시계 방향*/
+        border-top-left-radius: 100px;
+        /*특정 방향 접미사 이용*/
+        border-radius: 50%;
+        /*비율에 의한 모서리 다듬기*/
+    }
     
 </style>
 </head>
@@ -84,7 +120,7 @@
 
     <!--시맨틱 태그는 div의 일종이지만, 
                        좀 더 구체적인 의미를 가지는 공간 점유 태그-->
-    <div>
+    <div class="seller">
         <img src="./images/Penguins.jpg" alt="Seller" />
     </div>
     

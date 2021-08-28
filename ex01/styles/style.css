@@ -22,15 +22,23 @@ nav, section{
 }
 
 .beverage.green {
-    background-color: lightgreen;
+    /*background-color: rgba(0,255,0,0.1);*/
+    background-color: #00FF0020;
 }
 
 .beverage.blue {
-    background-color: cyan;
+    /*background-color: rgba(0,0,255,0.1);*/
+    background-color: #0000FF20;
 }
 
 .beverage.purple{
-    background-color: violet;
+    /*background-color: rgba(127,0,127,0.1);*/
+    background-color: #7F007F20;
+}
+
+.beverage.red{
+    /*background-color: rgba(255,0,0,0.1);*/
+    background-color: #FF000020;
 }
 
 /*가상선택자(반응 선택자)
