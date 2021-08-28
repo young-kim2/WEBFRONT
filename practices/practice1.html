@@ -5,7 +5,67 @@
 <title>테이블</title>
 
 <style type="text/css" media="screen">
+/*단계1 기본 패딩, 기본 마진을 없애기*/
+*{
+	padding: 0; /*내부 영역의 공백값*/
+	margin: 0; /*외부 영역의 공백값*/
+}
+/*단계1-2. 기본 글꼴 변경*/
+body{
+	font-family: "맑은 고딕", 돋움, sans-serif;
+	font-size: 0.75em; /*브라우저 기본 글꼴 사이즈 16px*/
+	color: #333;
+}
+/*단계1-3. 여백 설정*/
+.tbl-ex{
+	margin: 10px auto;
+	/*하단 10px, 좌우 auto*/
+}
+/*단계 2. 테이블에 border 설정*/
+.tbl-ex, th, td{
+	border: 1px solid #333; /*#333333*/
+}
+/*단계 3. 셀간의 간격 없애기*/
+.tbl-ex{
+	border-collapse: collapse;
+}
+/*단계 4. 내부 영역 확보*/
+th, td{
+	padding: 8px;
+}
+/*단계 5.컬럼 헤더 꾸미기*/
+th{
+	background-color: #999;
+	font-size: 1.1em;
+	color: #fff;
+}
+/*단계 6.세로 라인 없애기*/
+.tbl-ex, th, td{
+	border-left: 0;
+	border-right: 0;
+}
+/*단계 7.th의 상하 보더 강조*/
+th{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+} 
+/*단계 8.td의 테두리 점선으로*/
+td{
+	border-style: dotted;
+}
 
+/*단계 10.짝수번째 게시물의 배경색을 변경*/
+tr:nth-child(2n+1){
+	background-color: #E8ECF6;
+}
+
+/*단계 9.마우스가 올라갔을 때의 background 처리*/
+tr:hover{
+	background-color: #fc6;
+	cursor: pointer;
+}
+
+/*스타일의 적용 순서에 유의*/
 </style>
 </head>
 <body>
