@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        *{
+            border: 1px dotted red;
+        }
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Container Test</h1>
+    
+    <!-- 최대 1140px까지 증가-->
+    <div class="container">
+        <h2>Container 적용</h2>
+        <div class="row"><!--행-->
+        <!--장치 정보, 컬럼 개수를 지정하지 않으면 자동 분할-->
+        <div class="col">
+            <h3>Column 1</h3>
+            <p>균등 분할: 한 row에 col 개수를 균등 분할</p>
+        </div>
+        <div class="col">
+            <h3>Column 2</h3>
+        </div>
+        <div class="col">
+            <h3>Column 3</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <!--중간 사이즈 장치에서 3컬럼 차지-->
+            <h3>Column 1</h3>
+            <p>중간 사이즈 (md)이상에서 3/12 격자를 차지합니다.</p>
+        </div>
+        <div class="col-md-9">
+            <h3>Column 2</h3>
+            <p>중간 사이즈(md)이상에서 9/12 격자를 차지합니다.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h3>Column 1</h3>
+            <p>남은 격자 중에서 균등 분할</p>
+        </div>
+        <div class="col-md-6">
+            <h3>Column 2</h3>
+            <p>중간 사이즈 이상에서 6/12 격자를 차지합니다.</p>
+        </div>
+        <div class="col">
+            <h3>Column 3</h3>
+            <p>남은 격자 중에서 균등 분할</p>
+        </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle(includes Popper)-->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
