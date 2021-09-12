@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--Required meta tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1, shrink-to-fit=no">
+
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <title>Alert Component</title>
+    </head>
+    <body>
+        <!--사용자에게 메시지를 피드백 주클래스 alert 보조클래스 alert-용도 용도는 button 용도와 동일-->
+        <div class="container">
+            <!--fade show 클래스를 추가하면 애니메이션 효과를 추가-->
+            <div class="alert alert-info show fade" role="alert">
+                중요한 메시지가 있습니다
+                자세한 내용을 보시려면
+                <!--alert 내부에 링크 삽입시 .alert-link 클래스를 추가해 주면 자연스러워진다-->
+                <a href="#" class="alert-link">여기 </a>를 클릭하세요
+                <!--닫기 버튼 추가-->
+                <button class="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        <!--Optional JavaScript; choose one of the two!-->
+        <!--Option 1: jQuery and Bootstrap Budle (includes Popper)-->
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+        <!--Option 2: Separate Popper and Bootstrap JS-->
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>-->
+    </body>
+</html>
