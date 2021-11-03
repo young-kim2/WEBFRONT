@@ -37,18 +37,31 @@
                //실행의 단계마다 이벤트 발생-> 각 단계별로 Hook 함수가 연결된다
                beforeCreate: function(){
                    //객체가 생성되지 않은 상태
+                   //아직 model, view에 접근할 수 없는 상태
                    console.log("beforeCreate");
+                   console.log("MODEL:", this.message);
                },
                created:function(){
                    //ViewModel이 생성되었으나 View가 연결되지 않은 상태
+                   //Model에 접근할 수 있는 상태
+                   //만약 API 호출해야 한다면 가장 적합한 LifeCycle 단계
                    console.log("created");
+                   console.log("MODEL:", this.message);
+                   //View 연결 안된 상태->DOM에 접근할 수 없다
+                   console.log("VIEW:",this.$el);
                },
                mounted: function(){
                    //View가 연결되어서 DOM에 접근할 수 있는 상태
                    console.log("mounted");
+                   console.log("VIEW:",this.$el);
+                   //el 요소가 ViewModel에 바인딩 됨
+                   //이후에 DOM 요소에 접근할 수 있다.
+                   console.log("EL:",this.$el.innerText);
                },
                updated: function(){
-                   console.log("updated");
+                   //내부 모델이 변경되었을 때 발생
+                   console.log("updated",this.message);
+                   //ViewModel이 Virtual DOM을 다시 구성-> 실제 DOM을 재구축
                }
             });
         </script>
